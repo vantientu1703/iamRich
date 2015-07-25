@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ir8-dy-utE">
+                                <rect key="frame" x="37" y="61" width="301" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="Bre-10-1RF"/>
+                                    <constraint firstAttribute="width" constant="301" id="lEd-lW-ydy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I am Rich" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVx-si-R09">
+                                <rect key="frame" x="122" y="388" width="130" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="K1a-OK-bey"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="MPb-an-emN"/>
+                                    <constraint firstAttribute="width" constant="188" id="sXH-Jh-223"/>
+                                    <constraint firstAttribute="height" constant="37" id="xY5-fg-ktJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.43137258291244507" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20290798611111116" green="0.20290798611111116" blue="0.20290798611111116" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ir8-dy-utE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="41" id="018-hc-AXy"/>
+                            <constraint firstAttribute="centerX" secondItem="Ir8-dy-utE" secondAttribute="centerX" id="HMY-1f-y3T"/>
+                            <constraint firstAttribute="centerX" secondItem="Ir8-dy-utE" secondAttribute="centerX" id="LMS-wG-7k2"/>
+                            <constraint firstAttribute="centerX" secondItem="TVx-si-R09" secondAttribute="centerX" id="Zk9-4p-mEz"/>
+                            <constraint firstAttribute="centerX" secondItem="TVx-si-R09" secondAttribute="centerX" id="mhT-MW-g9h"/>
+                            <constraint firstItem="TVx-si-R09" firstAttribute="top" secondItem="Ir8-dy-utE" secondAttribute="bottom" constant="38" id="t1e-QC-EEM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="iamRich" destination="TVx-si-R09" id="eGk-Sn-ayK"/>
+                        <outlet property="ruby" destination="Ir8-dy-utE" id="w7H-uD-uNt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317.5" y="199.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ruby.png" width="257" height="251"/>
+    </resources>
+</document>
